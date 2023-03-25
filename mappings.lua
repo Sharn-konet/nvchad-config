@@ -1,25 +1,36 @@
----@type MappingsConfig
+---@type MappingsTable
 local M = {}
 
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
   },
-  t = {
-    ["<Esc>"] = { "<C-\\><C-n>", "escape terminal"}
-  }
 }
 
 M.nvimtree = {
   n = {
-    ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" }
+    ["<leader>e"] = {"<cmd> NvimTreeToggle <CR>", "toggle nvimtree"}
   }
 }
 
-M.floatterm = {
-  n = {
-    ["<leader>lg"] = { "<cmd> FloatermNew --name=lazygit --title=Lazygit lazygit <CR>", "Show lazygit"},
-  },
-}
+-- M.floaterm = {
+--   n = {
+--     ["<leader>lg"] = {
+--       function()
+--         require("nvterm.terminal").toggle "float"
+--       end,
+--       "open lazygit"
+--     },
+--   },
+--
+--   t = {
+--     ["<leader>lg"] = {
+--       function()
+--         require("nvterm.terminal").toggle "float"
+--       end,
+--       "open lazygit"
+--     },
+--   }
+-- }
 
 return M

@@ -5,15 +5,18 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme_toggle = { "onedark", "one_light" },
   theme = "chocolate",
+  theme_toggle = { "chocolate", "one_light" },
+
   hl_override = highlights.override,
   hl_add = highlights.add,
 
-  transparency = false,
+  statusline = {
+    theme = "vscode_colored"
+  },
 }
 
-M.plugins = require "custom.plugins"
+M.plugins = "custom.plugins"
 
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
