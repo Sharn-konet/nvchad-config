@@ -65,6 +65,7 @@ M.mason = {
     
     -- bash
     "beautysh",
+    "bash-language-server",
 
     -- dockerfiles
     "dockerfile-language-server",
