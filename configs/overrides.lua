@@ -98,6 +98,9 @@ M.mason = {
     "sql-formatter",
     "sqlfluff",
     "sqlls",
+    
+    -- svelte
+    "svelte-language-server",
 
     -- terraform
     "terraform-ls",
