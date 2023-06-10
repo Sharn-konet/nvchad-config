@@ -107,6 +107,9 @@ M.mason = {
     "terraform-ls",
     "tflint",
 
+    --WGSL
+    "wgsl-analyzer",
+
     -- yaml
     "yaml-language-server",
     "yamlfmt",
