@@ -32,7 +32,8 @@ M.treesitter = {
     "terraform",
     "toml",
     "typescript",
-    "yaml"
+    "yaml",
+    "wgsl"
   },
   indent = {
     enable = true,
