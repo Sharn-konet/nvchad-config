@@ -1,6 +1,8 @@
 local autocmd = vim.api.nvim_create_autocmd
 local format = vim.lsp.buf.format
 
+vim.filetype.add({extension = {wgsl = "wgsl"}})
+
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {
 --   pattern = "*",
