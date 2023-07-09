@@ -115,6 +115,9 @@ M.mason = {
     "yamlfmt",
     "yamllint",
 
+    --taplo
+    "taplo",
+
     -- misc
     "alex",
   },
