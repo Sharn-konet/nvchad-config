@@ -18,7 +18,15 @@ M.nvterm = {
 
   t = {
     -- toggle in terminal mode
-    ["<M-i>"] = {
+    -- ["<M-i>"] = {
+    --   function()
+    --     require("nvterm.terminal").toggle "float"
+    --   end,
+    --   "toggle floating term",
+    -- },
+
+    -- toggle in normal mode
+    ["<S-tab>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
@@ -42,7 +50,24 @@ M.nvterm = {
 
   n = {
     -- toggle in normal mode
-    ["<M-i>"] = {
+    -- ["<M-i>"] = {
+    --   function()
+    --     require("nvterm.terminal").toggle "float"
+    --   end,
+    --   "toggle floating term",
+    -- },
+
+
+    -- toggle in normal mode
+    ["<S-tab>"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "toggle floating term",
+    },
+
+    -- toggle in normal mode
+    ["<leader>i"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
