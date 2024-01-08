@@ -37,6 +37,9 @@ local sources = {
 
   b.diagnostics.hadolint,
 
+  -- b.diagnostics.gospel, Not working with Mason
+  b.formatting.gofumpt,
+
   b.diagnostics.jsonlint,
 
   b.diagnostics.ktlint.with { filetypes = {"kts", "kt"} },
